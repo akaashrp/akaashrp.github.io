@@ -255,8 +255,6 @@ permalink: /:categories/:title/
 # paginate_path: /page:num/
 timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-remote_theme: pages-themes/hacker@v0.2.0
-
 # Plugins
 plugins:
   - jekyll-paginate
@@ -264,7 +262,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
-  - jekyll-remote-theme
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
