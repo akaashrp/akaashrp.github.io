@@ -49,10 +49,6 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-remote_theme: pages-themes/hacker@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -259,6 +255,7 @@ permalink: /:categories/:title/
 # paginate_path: /page:num/
 timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+remote_theme: pages-themes/hacker@v0.2.0
 
 # Plugins
 plugins:
@@ -267,6 +264,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-remote-theme
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
