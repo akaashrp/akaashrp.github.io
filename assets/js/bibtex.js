@@ -172,6 +172,16 @@ BibTexEntry.prototype.render = function(database)
     string += ", ";
     var authors = entry.author.split(" and ");
     var nrAuthors = authors.length;
+    // restructure entries of the form "Last Name, First Name" to "First Name Last Name"
+    for (var i = 0; i < nrAuthors; i++) {
+      var author = authors[i];
+      var nameParts = author.split(", ");
+      if (nameParts.length === 2) {
+        var firstName = nameParts[1];
+        var lastName = nameParts[0];
+        authors[i] = firstName + " " + lastName;
+      }
+    }
     expand(authors[0]);
     if (nrAuthors==2) {
       string += " and "; expand(authors[1]);
