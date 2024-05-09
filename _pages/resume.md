@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Resume"
-permalink: /files/resume.pdf
+permalink: /resume/
 author_profile: true
 redirect_from:
   - /resume
