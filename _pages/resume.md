@@ -1,11 +1,10 @@
 ---
 layout: archive
 title: "Resume"
-permalink: /resume/
+permalink: /files/resume.pdf
 author_profile: true
 redirect_from:
   - /resume
 ---
 
 {% include base_path %}
-{% include resume.html %}
