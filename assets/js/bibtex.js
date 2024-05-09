@@ -72,7 +72,10 @@ function BibTexEntry(text) {
   this.type = text.slice(1,i);
   var inner = text.slice(i+1,j);
   // split inner into pairs
-  var pairs = inner.split(" and ");
+  var pairs = inner.split("},");
+  for (var k in pairs) {
+    pairs[k] = pairs[k].concat("}");
+  }
   
   // get the key and drop it from pairs
   this.key = pairs[0];
@@ -86,7 +89,7 @@ function BibTexEntry(text) {
     if (pair.length>2) { // to get rid of whitespace fields, fix !
       var keyvalue = pair.split('=');
       if (keyvalue.length<2) throw ("BibTexEntry: invalid key-value pair: [" + pair + "]");
-      // Special exception for scriipt arguments
+      // Special exception for script arguments
       if (keyvalue.length==3) keyvalue[1] = keyvalue[1].concat("=",keyvalue[2]);
       if (keyvalue.length>3) throw ("BibTexEntry: invalid key-value pair: [" + pair + "]");
       var key = bibtex.trim(keyvalue[0]).toLowerCase();
