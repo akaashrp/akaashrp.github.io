@@ -72,7 +72,7 @@ function BibTexEntry(text) {
   this.type = text.slice(1,i);
   var inner = text.slice(i+1,j);
   // split inner into pairs
-  var pairs = inner.split(',');
+  var pairs = inner.split(" and ");
   
   // get the key and drop it from pairs
   this.key = pairs[0];
