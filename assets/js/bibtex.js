@@ -122,14 +122,14 @@ BibTexEntry.prototype.toList = function()
   string += "<li>year   : " + this.year;
   string += "<li>title  : " + this.title;
   switch (this.type) {
-    case "Article":
+    case "article":
       string += "<li>journal : " + this.journal;
       break;
-    case "InProceedings":
-    case "InCollection":
+    case "inproceedings":
+    case "incollection":
       string += "<li>booktitle : " + this.booktitle;
       break;
-    case "TechReport":
+    case "techreport":
       string += "<li>institution : " + this.institution;
       string += "<li>number      : " + this.number;
       break;
