@@ -229,6 +229,7 @@ BibTexEntry.prototype.render = function(database)
       break;
     case "inproceedings":
     case "incollection":
+      console.log(this);
       renderTitleAuthors (this);
       lookup(this,database,"booktitle");
       string += ", " + span("year",this.year);
