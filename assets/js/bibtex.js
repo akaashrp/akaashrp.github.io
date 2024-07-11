@@ -162,12 +162,20 @@ BibTexEntry.prototype.render = function(database)
   }
   
   function renderTitleAuthors(entry) {
+    // extract title
+    const titlePattern = /title=\{(.*?)\}/s;
+    const titleMatch = entry.text.match(titlePattern);
+    if (titleMatch) {
+      entry.title = titleMatch[1];
+    } else {
+      throw "BibTexEntry: no title";
+    }
+    
     // title and URL
     if (entry.url)
       string += link("title",entry.url,entry.title);
     else {
       string += span("title",entry.title);
-      console.log("title: " + entry.title);
     }
     
     // authors
@@ -229,7 +237,6 @@ BibTexEntry.prototype.render = function(database)
       break;
     case "inproceedings":
     case "incollection":
-      console.log(this);
       renderTitleAuthors (this);
       lookup(this,database,"booktitle");
       string += ", " + span("year",this.year);
