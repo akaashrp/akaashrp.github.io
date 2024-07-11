@@ -121,7 +121,6 @@ BibTexEntry.prototype.toList = function()
   string += "<li>author : " + this.author;
   string += "<li>year   : " + this.year;
   string += "<li>title  : " + this.title;
-  console.log(this.title);
   switch (this.type) {
     case "article":
       string += "<li>journal : " + this.journal;
@@ -135,7 +134,6 @@ BibTexEntry.prototype.toList = function()
       string += "<li>number      : " + this.number;
       break;
   }
-  console.log("string: " + string);
   return string + "</ul>";
 }
 
@@ -167,8 +165,10 @@ BibTexEntry.prototype.render = function(database)
     // title and URL
     if (entry.url)
       string += link("title",entry.url,entry.title);
-    else
+    else {
       string += span("title",entry.title);
+      console.log("title: " + entry.title);
+    }
     
     // authors
     string += ", ";
@@ -194,8 +194,6 @@ BibTexEntry.prototype.render = function(database)
         expand(authors[i])
       }
     }
-
-    console.log("string in renderTitleAuthors: " + string);
   };
   
   // lookup a value in the database and render it with URL if applicable
