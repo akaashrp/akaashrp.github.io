@@ -1,0 +1,8 @@
+---
+title: "Vasuki Research Project"
+excerpt: "This is the accompanying report for a group research project I worked on called \"Vasuki: Minimizing Makespan for Offline LLM Batch Inference\". The project was focused on developing a first-class offline LLM inference serving system leveraging KV cache offloading and bin-packing to navigate the induced memory-makespan-cost tradeoff space on commodity hardware."
+collection: portfolio
+permalink: /files/vasuki.pdf
+---
+
+<!-- This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML.  -->
