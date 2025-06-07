@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Akaash Parthasarathy"
   avatar           : "profile.png"
-  bio              : "CS @ Georgia Tech"
-  location         : "Atlanta, GA"
-  employer         : "Georgia Tech"
+  bio              : "ML @ CMU"
+  location         : "Pittsburgh, PA"
+  employer         : "Carnegie Mellon University"
   googlescholar    : "https://scholar.google.com/citations?user=lRKoQSgAAAAJ"
-  email            : "arp9@gatech.edu"
+  email            : "akaashrp@cmu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
