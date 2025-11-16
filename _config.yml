@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &akaashrp
 facebook:
   username               :
   app_id                 :
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Akaash Parthasarathy"
   avatar           : "profile.png"
-  bio              : "ML @ CMU"
+  bio              : "\"Systems hard. Must work harder.\""
   location         : "Pittsburgh, PA"
   employer         : "Carnegie Mellon University"
   googlescholar    : "https://scholar.google.com/citations?user=lRKoQSgAAAAJ"
