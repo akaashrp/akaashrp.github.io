@@ -18,4 +18,4 @@ Outside of work, I enjoy
 - Video games: I regularly play SSBU and MK8DX (I don't own a Switch 2 yet). I'm currently playing Celeste, Silksong, and Tears of the Kingdom.
 - Non-video games: I especially enjoy social deduction games like Blood on the Clocktower and Ultimate Werewolf. I also like trick-taking card games like Wizard and Court Piece. 
 - Hiking: I've been to a few US national parks (Acadia, Everglades, Zion, Death Valley, Biscayne, Mount Rainier). Among others, I'm hoping to visit Denali, Yosemite, and Glacier soon.
-- Piano: I don't currently own a piano, but I have a MIDI keyboard I play occasionally. 
+- Piano/Keyboard: I don't currently own a piano, but I have a MIDI keyboard I play occasionally. 
