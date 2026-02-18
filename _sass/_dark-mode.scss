@@ -126,7 +126,14 @@ html[data-theme="dark"] td {
   border-color: #334155;
 }
 
-html[data-theme="dark"] .greedy-nav,
+html[data-theme="dark"] .masthead {
+  background: #0f172a;
+}
+
+html[data-theme="dark"] .greedy-nav {
+  background: transparent;
+}
+
 html[data-theme="dark"] .page__footer {
   background: #0b1220;
 }
@@ -172,6 +179,13 @@ html[data-theme="dark"] .author__urls:before {
 html[data-theme="dark"] .greedy-nav .hidden-links:after,
 html[data-theme="dark"] .author__urls:after {
   border-color: #111827 transparent;
+}
+
+html[data-theme="dark"] .author__urls.social-icons .fa-map-marker,
+html[data-theme="dark"] .author__urls.social-icons .fa-github,
+html[data-theme="dark"] .author__urls.social-icons .fa-github-alt,
+html[data-theme="dark"] .author__urls.social-icons .fa-github-square {
+  color: #cbd5e1;
 }
 
 html[data-theme="dark"] .toc__menu a {
