@@ -19,7 +19,8 @@
   }
 
   function getCurrentTheme() {
-    return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+    var theme = root.getAttribute("data-theme");
+    return theme === "light" || theme === "dark" ? theme : "dark";
   }
 
   function updateMetaThemeColor(theme) {

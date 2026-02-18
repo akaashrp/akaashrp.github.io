@@ -25,8 +25,7 @@
       savedTheme = null;
     }
 
-    var systemPrefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    var theme = (savedTheme === "light" || savedTheme === "dark") ? savedTheme : (systemPrefersDark ? "dark" : "light");
+    var theme = (savedTheme === "light" || savedTheme === "dark") ? savedTheme : "dark";
     document.documentElement.setAttribute("data-theme", theme);
   })();
 </script>

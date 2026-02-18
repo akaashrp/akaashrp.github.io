@@ -3,17 +3,22 @@
    ========================================================================== */
 
 .masthead__inner-wrap {
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .masthead__menu {
-  padding-right: 3.5rem;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-right: 0;
+}
+
+.masthead__theme {
+  flex: 0 0 auto;
 }
 
 .theme-toggle {
-  position: absolute;
-  top: 50%;
-  right: 1rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +26,6 @@
   height: 2.25rem;
   margin: 0;
   padding: 0;
-  transform: translateY(-50%);
   color: $masthead-link-color;
   border: 1px solid $border-color;
   border-radius: 999px;
@@ -45,14 +49,10 @@
   justify-content: center;
 }
 
-.theme-toggle__icon svg {
+.theme-toggle__icon svg,
+.theme-toggle__icon i {
   width: 1rem;
   height: 1rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 .theme-toggle__icon--sun {
@@ -64,12 +64,9 @@
   color: #cbd5e1;
 }
 
-.greedy-nav > button {
-  right: 3.5rem;
-}
-
-.greedy-nav .hidden-links {
-  right: 3.5rem;
+.theme-toggle__icon i {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 html[data-theme="dark"] .theme-toggle__icon--sun {
