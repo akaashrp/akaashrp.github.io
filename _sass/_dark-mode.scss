@@ -1,0 +1,265 @@
+/* ==========================================================================
+   Theme Toggle + Dark Mode
+   ========================================================================== */
+
+.masthead__inner-wrap {
+  position: relative;
+}
+
+.masthead__menu {
+  padding-right: 3.5rem;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  color: $masthead-link-color;
+  border: 1px solid $border-color;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: $masthead-link-color-hover;
+  border-color: mix(#fff, $primary-color, 50%);
+  background: mix(#fff, $primary-color, 92%);
+}
+
+.theme-toggle:focus {
+  @extend %tab-focus;
+}
+
+.theme-toggle__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle__icon svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-toggle__icon--sun {
+  color: #f59e0b;
+}
+
+.theme-toggle__icon--moon {
+  display: none;
+  color: #cbd5e1;
+}
+
+.greedy-nav > button {
+  right: 3.5rem;
+}
+
+.greedy-nav .hidden-links {
+  right: 3.5rem;
+}
+
+html[data-theme="dark"] .theme-toggle__icon--sun {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-toggle__icon--moon {
+  display: inline-flex;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  background-color: #0f172a;
+}
+
+html[data-theme="dark"] body {
+  color: #e2e8f0;
+  background-color: #0f172a;
+}
+
+html[data-theme="dark"] a {
+  color: #7dd3fc;
+}
+
+html[data-theme="dark"] a:hover,
+html[data-theme="dark"] a:focus {
+  color: #bae6fd;
+}
+
+html[data-theme="dark"] .theme-toggle {
+  color: #e2e8f0;
+  border-color: #334155;
+  background: #111827;
+}
+
+html[data-theme="dark"] .theme-toggle:hover {
+  color: #f8fafc;
+  border-color: #475569;
+  background: #1f2937;
+}
+
+html[data-theme="dark"] .masthead,
+html[data-theme="dark"] .page__footer,
+html[data-theme="dark"] .page__content h2,
+html[data-theme="dark"] .archive__subtitle,
+html[data-theme="dark"] .page__share,
+html[data-theme="dark"] .page__comments-title,
+html[data-theme="dark"] .page__content + .pagination,
+html[data-theme="dark"] .page__meta + .pagination,
+html[data-theme="dark"] .page__share + .pagination,
+html[data-theme="dark"] .page__comments + .pagination,
+html[data-theme="dark"] .pagination li a,
+html[data-theme="dark"] .pagination--pager,
+html[data-theme="dark"] hr,
+html[data-theme="dark"] th,
+html[data-theme="dark"] td {
+  border-color: #334155;
+}
+
+html[data-theme="dark"] .greedy-nav,
+html[data-theme="dark"] .page__footer {
+  background: #0b1220;
+}
+
+html[data-theme="dark"] .greedy-nav a,
+html[data-theme="dark"] .masthead__menu-item a {
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .greedy-nav a:hover,
+html[data-theme="dark"] .masthead__menu-item a:hover {
+  color: #7dd3fc;
+}
+
+html[data-theme="dark"] .greedy-nav .visible-links a:before {
+  background: #7dd3fc;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links,
+html[data-theme="dark"] .author__urls,
+html[data-theme="dark"] .toc,
+html[data-theme="dark"] .page__comments-form,
+html[data-theme="dark"] .well,
+html[data-theme="dark"] .pagination li a,
+html[data-theme="dark"] .pagination--pager {
+  background: #111827;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links,
+html[data-theme="dark"] .author__urls,
+html[data-theme="dark"] .toc,
+html[data-theme="dark"] table,
+html[data-theme="dark"] .page__taxonomy-item {
+  border-color: #334155;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links:before,
+html[data-theme="dark"] .author__urls:before {
+  border-color: #334155 transparent;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links:after,
+html[data-theme="dark"] .author__urls:after {
+  border-color: #111827 transparent;
+}
+
+html[data-theme="dark"] .toc__menu a {
+  color: #cbd5e1;
+  border-bottom-color: #334155;
+}
+
+html[data-theme="dark"] .toc__menu a:hover {
+  color: #e2e8f0;
+  background: #1f2937;
+}
+
+html[data-theme="dark"] .page__meta,
+html[data-theme="dark"] .archive__subtitle,
+html[data-theme="dark"] figcaption,
+html[data-theme="dark"] .page__footer,
+html[data-theme="dark"] .page__footer .fas,
+html[data-theme="dark"] .page__footer .fab,
+html[data-theme="dark"] .page__footer .far,
+html[data-theme="dark"] .page__footer .fal {
+  color: #94a3b8;
+}
+
+html[data-theme="dark"] p > code,
+html[data-theme="dark"] a > code,
+html[data-theme="dark"] li > code,
+html[data-theme="dark"] figcaption > code,
+html[data-theme="dark"] td > code {
+  color: #e2e8f0;
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] div.highlighter-rouge,
+html[data-theme="dark"] figure.highlight {
+  border-color: #334155;
+  background-color: #0b1220;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] div.highlighter-rouge:before,
+html[data-theme="dark"] figure.highlight:before {
+  color: #cbd5e1;
+  background-color: #1f2937;
+}
+
+html[data-theme="dark"] table {
+  border-color: #334155;
+}
+
+html[data-theme="dark"] thead {
+  background-color: #1f2937;
+  border-bottom-color: #334155;
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  color: #e2e8f0;
+  background: #111827;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] input:hover,
+html[data-theme="dark"] textarea:hover,
+html[data-theme="dark"] select:hover {
+  border-color: #475569;
+}
+
+html[data-theme="dark"] input:focus,
+html[data-theme="dark"] textarea:focus,
+html[data-theme="dark"] select:focus {
+  border-color: #7dd3fc;
+}
+
+html[data-theme="dark"] .btn--inverse {
+  color: #e2e8f0 !important;
+  border-color: #475569 !important;
+  background-color: #111827;
+}
+
+html[data-theme="dark"] .btn--inverse:hover {
+  color: #fff !important;
+  border-color: #7dd3fc !important;
+  background-color: #1f2937;
+}
